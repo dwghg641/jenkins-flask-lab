@@ -5,6 +5,7 @@ pipeline {
         IMAGE_NAME     = 'jenkins-flask-lab'
         CONTAINER_NAME = 'jenkins-flask-app'
         APP_PORT       = '8081'
+        PATH           = "F:\\Docker\\resources\\bin;C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
     }
 
     stages {
@@ -55,3 +56,4 @@ pipeline {
         }
     }
 }
+
